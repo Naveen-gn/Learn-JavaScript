@@ -34,7 +34,8 @@
 </div> -->
 
 <!-- code for calculator using js -->
-<div>
+
+<!-- <div>
     <label for="operandinput1">Enter the Firstnumber:</label>
     <input type="number" id="operandinput1" placeholder="0">
 </div>
@@ -56,11 +57,71 @@
 </div>
 <div>
     <h3 id="result"></h3>
+</div> -->
+
+<!-- Code of job Qualification using radio button & js -->
+<div>
+    <input type="radio" id="rad1" name="qual" value="Illiterate">
+    <label for="rad1">Illiterate</label>
+    <br>
+    <input type="radio" id="rad2" name="qual" value="High School">
+    <label for="rad2">High School</label>
+    <br>
+    <input type="radio" id="rad3" name="qual" value="UG">
+    <label for="rad3">UG</label>
+    <br>
+    <input type="radio" id="rad4" name="qual" value="PG">
+    <label for="rad4">PG</label>
+    <br>
+    <input type="radio" id="rad5" name="qual" value="Doctorate">
+    <label for="rad5">Doctorate</label>
+</div>
+<div>
+    <button>Submit</button>
+</div>
+<div>
+    <h3 id="ans"></h3>
 </div>
 
 
-
 <script>
+const btn = document.querySelector('button');
+btn.addEventListener('click', fun)
+function fun() {
+    const radioButtons = document.getElementsByName('qual');
+    let selectedQualification = '';
+
+    for (let i = 0; i < radioButtons.length; i++) {
+        if (radioButtons[i].checked) {
+            selectedQualification = radioButtons[i].value;
+            break;
+        }
+    }
+    const answerElement = document.getElementById('ans');
+    switch (selectedQualification) {
+        case 'Illiterate':
+            answerElement.textContent = 'You are Not Qualified for job';
+            break;
+        case 'High School':
+            answerElement.textContent = 'You are Not Qualified for job';
+            break;
+        case 'UG':
+            answerElement.textContent = 'You are Qualified for job';
+            break;
+        case 'PG':
+            answerElement.textContent = 'You are Qualified for job';
+            break;
+        case 'Doctorate':
+            answerElement.textContent = 'You are Qualified for job';
+            break;
+        default:
+            answerElement.textContent = 'Please select a qualification.';
+            break;
+    }
+}
+
+
+
 //  javascript for show the details for each value using switch statement
 
 // let selval=document.querySelector('button')
@@ -88,32 +149,33 @@
 // }
 
 // script code for calculator using js
-const calBtn = document.querySelector('button');
-calBtn.addEventListener('click', calculate);
 
-function calculate() {
-    const operand1 = Number(document.getElementById('operandinput1').value);
-    const operand2 = Number(document.getElementById('operandinput2').value);
-    const operator = document.getElementById('sylinput').value;
-    let result;
-    switch (operator) {
-        case 'add':
-            result = operand1 + operand2;
-            break;
-        case 'sub':
-            result = operand1 - operand2;
-            break;
-        case 'mul':
-            result = operand1 * operand2;
-            break;
-        case 'div':
-            result = operand1 / operand2;
-            break;
-        default:
-            result = 'Invalid operator';
-    }
-    document.getElementById('result').textContent = `Result: ${result}`;
-}
+// const calBtn = document.querySelector('button');
+// calBtn.addEventListener('click', calculate);
+
+// function calculate() {
+//     const operand1 = Number(document.getElementById('operandinput1').value);
+//     const operand2 = Number(document.getElementById('operandinput2').value);
+//     const operator = document.getElementById('sylinput').value;
+//     let result;
+//     switch (operator) {
+//         case 'add':
+//             result = operand1 + operand2;
+//             break;
+//         case 'sub':
+//             result = operand1 - operand2;
+//             break;
+//         case 'mul':
+//             result = operand1 * operand2;
+//             break;
+//         case 'div':
+//             result = operand1 / operand2;
+//             break;
+//         default:
+//             result = 'Invalid operator';
+//     }
+//     document.getElementById('result').textContent = `Result: ${result}`;
+// }
 
 
 
