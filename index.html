@@ -23,9 +23,11 @@
         <option value="Delhi">Delhi</option>
     </select>
 </div>
-<div style="margin-top: 10px;">
-    <button>Show the selected City</button>
+
+<div style="margin-top: 20px;">
+    <button style="padding: 10px; border-radius: 10px;">Show the selected City</button>
 </div>
+
 <div >
     <h4 id="result"></h4>
 </div>
@@ -52,7 +54,8 @@ function disdet(){
         case "Delhi":
         input2.innerHTML="The Selected city is Delhi"
         break;
-
+        default:
+        input2.innerHTML="Select the city first"
     }
     
 
