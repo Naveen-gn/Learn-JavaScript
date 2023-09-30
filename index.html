@@ -7,12 +7,27 @@
 </head>
 <body>
 
-  
+<input type="password" id="myInput" placeholder="password">
+<button onclick="getValue()">submit</button>
+<input type="text" name="" id="pal" placeholder="Enter the Text">
+<button type="submit" onclick="reverseString()">Submit</button>
 
 
 
 
 <script>
+    // Code for password validation using js
+     function getValue() {
+   var inputValue =document.getElementById("myInput").value;
+   if(inputValue==12345678)
+   {
+     alert("Access granted")
+   }
+   else{
+     alert("Access Denied")
+   }
+   console.log(inputValue);
+ }
 // Code For Pick a random letter in the string
 const name="AunKuma-Topper"
 let len=name.length
