@@ -14,7 +14,8 @@
 <button type="submit" onclick="reverseString()">Submit</button> -->
 
 <!-- Program for show the details for each value using switch statement -->
-<h1>Select the State</h1>
+
+<!-- <h1>Select the State</h1>
 <div>
     <select id="input1">
         <option value="None" selected disabled hidden>Select the City</option>
@@ -30,36 +31,90 @@
 
 <div >
     <h4 id="result"></h4>
-</div>
+</div> -->
 
+<!-- code for calculator using js -->
+<div>
+    <label for="operandinput1">Enter the Firstnumber:</label>
+    <input type="number" id="operandinput1" placeholder="0">
+</div>
+<div>
+    <select id="sylinput">
+        <option value="None" selected disabled hidden>Select the Operator</option>
+        <option value="add">+</option>
+        <option value="sub">-</option>
+        <option value="mul">*</option>
+        <option value="div">/</option>
+    </select>
+</div>
+<div>
+    <label for="operandinput2">Enter the Secondnumber:</label>
+    <input type="number" id="operandinput2" placeholder="0">
+</div>
+<div>
+    <button>Show Result</button>
+</div>
+<div>
+    <h3 id="result"></h3>
+</div>
 
 
 
 <script>
 //  javascript for show the details for each value using switch statement
-let selval=document.querySelector('button')
-selval.addEventListener('click',disdet)
-function disdet(){
-    let input1=document.getElementById("input1")
-    let city=input1.value;
-    let input2=document.getElementById("result")
+
+// let selval=document.querySelector('button')
+// selval.addEventListener('click',disdet)
+// function disdet(){
+//     let input1=document.getElementById("input1")
+//     let city=input1.value;
+//     let input2=document.getElementById("result")
   
-    switch (city){
-        case "Chennai":
-        input2.innerHTML="The Selected city is chennai"
-        break;
-        case "Mumbai":
-        input2.innerHTML="The Selected city is Mumbai"
-        break;
-        case "Delhi":
-        input2.innerHTML="The Selected city is Delhi"
-        break;
-        default:
-        input2.innerHTML="Select the city first"
-    }
+//     switch (city){
+//         case "Chennai":
+//         input2.innerHTML="The Selected city is chennai"
+//         break;
+//         case "Mumbai":
+//         input2.innerHTML="The Selected city is Mumbai"
+//         break;
+//         case "Delhi":
+//         input2.innerHTML="The Selected city is Delhi"
+//         break;
+//         default:
+//         input2.innerHTML="Select the city first"
+//     }
     
 
+// }
+
+// script code for calculator using js
+const calBtn = document.querySelector('button');
+calBtn.addEventListener('click', calculate);
+
+function calculate() {
+    const operand1 = Number(document.getElementById('operandinput1').value);
+    const operand2 = Number(document.getElementById('operandinput2').value);
+    const operator = document.getElementById('sylinput').value;
+    let result;
+    switch (operator) {
+        case 'add':
+            result = operand1 + operand2;
+            break;
+        case 'sub':
+            result = operand1 - operand2;
+            break;
+        case 'mul':
+            result = operand1 * operand2;
+            break;
+        case 'div':
+            result = operand1 / operand2;
+            break;
+        default:
+            result = 'Invalid operator';
+    }
+    document.getElementById('result').textContent = `Result: ${result}`;
 }
+
 
 
 
@@ -126,15 +181,6 @@ function disdet(){
 // let arrstr="1234"
 // let arr2=arrstr.split('')
 // console.log(arr2)
-
-
-
-
-
-
 </script>
-<script src="script.js"></script>
-
-
 </body>
 </html>
