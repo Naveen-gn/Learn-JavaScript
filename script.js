@@ -188,10 +188,24 @@
 //     console.log(i);
 // }
 
-let fruit=["apple","orange","mango"]
-for(let fruit1 of fruit){
-    console.log(fruit1)
+// let fruit=["apple","orange","mango"]
+// for(let fruit1 of fruit){
+//     console.log(fruit1)
+// }
+
+let user={
+    name: 'John',
+    age: 36,
+    appear:{height:50,weight:100},
+    extras:["Eye color is black","Very tall"],
+    speak:function(){
+        console.log("My name is John")
+    }
 }
+for(let user1 in user){
+    console.log(user[user1])
+}
+
 
 //! code for while loop
 
