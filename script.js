@@ -188,6 +188,11 @@
 //     console.log(i);
 // }
 
+let fruit=["apple","orange","mango"]
+for(let fruit1 of fruit){
+    console.log(fruit1)
+}
+
 //! code for while loop
 
 // let i=0;
@@ -198,8 +203,10 @@
 // console.log(i);
 
 //!  code for print a even number between 1 to 10 using while loop
-let number = 1;
-while (number <= 10) {
-  console.log(number); 
-  number += 2;
-}
+// let number = 1;
+// while (number <= 10) {
+//   console.log(number); 
+//   number += 2;
+// }
+
+
