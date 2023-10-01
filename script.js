@@ -193,18 +193,30 @@
 //     console.log(fruit1)
 // }
 
-let user={
-    name: 'John',
-    age: 36,
-    appear:{height:50,weight:100},
-    extras:["Eye color is black","Very tall"],
-    speak:function(){
-        console.log("My name is John")
-    }
+//! code for using a 'in' keyword in for loop
+// let user={
+//     name: 'John',
+//     age: 36,
+//     appear:{height:50,weight:100},
+//     extras:["Eye color is black","Very tall"],
+//     speak:function(){
+//         console.log("My name is John")
+//     }
+// }
+// for(let user1 in user){
+//     console.log(user[user1])
+// }
+
+//! code for reverse a string using for loop
+let str="Arun is topper"
+console.log(`The original string: ${str}`)
+let arr =str.split(' ')
+let arr2=arr.reverse()
+let i;
+for(let rev of arr2){
+    console.log(rev)
 }
-for(let user1 in user){
-    console.log(user[user1])
-}
+
 
 
 //! code for while loop
