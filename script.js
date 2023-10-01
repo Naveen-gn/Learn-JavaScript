@@ -165,20 +165,23 @@
 //     name: 'John',
 //     age: 36,
 //     appear:{height:50,weight:100},
-//     extras:["Eye color is black"],
+//     extras:["Eye color is black","Very tall"],
 //     speak:function(){
 //         console.log("My name is John")
 //     }
 // }
+
 // console.log(user.name)
 // console.log(user.age)
 // console.log(user.appear.height)
-// console.log(user.extras)
+// console.log(user.extras[0])
 // user.speak()
 
 //! code for "For" loop
 // let i;
 // for(i=0;i<=10;i++){
+//     if(i%2===0)
+//     continue
 //     console.log(i);
 // }
 // for(i=10;i>=0;i--){
@@ -187,9 +190,16 @@
 
 //! code for while loop
 
-let i=0;
-while(i<=10){
-    console.log(i);
-    i++;
+// let i=0;
+// while(i<=10){
+//     i++;
+//     console.log(i);
+// }
+// console.log(i);
+
+//!  code for print a even number between 1 to 10 using while loop
+let number = 1;
+while (number <= 10) {
+  console.log(number); 
+  number += 2;
 }
-console.log(i);
