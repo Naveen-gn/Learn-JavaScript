@@ -177,10 +177,19 @@
 // user.speak()
 
 //! code for "For" loop
-let i;
-for(i=0;i<=10;i++){
+// let i;
+// for(i=0;i<=10;i++){
+//     console.log(i);
+// }
+// for(i=10;i>=0;i--){
+//     console.log(i);
+// }
+
+//! code for while loop
+
+let i=0;
+while(i<=10){
     console.log(i);
+    i++;
 }
-for(i=10;i>=0;i--){
-    console.log(i);
-}
+console.log(i);
