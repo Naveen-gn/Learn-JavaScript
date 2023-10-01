@@ -212,7 +212,6 @@ let str="Arun is topper"
 console.log(`The original string: ${str}`)
 let arr =str.split(' ')
 let arr2=arr.reverse()
-let i;
 for(let rev of arr2){
     console.log(rev)
 }
