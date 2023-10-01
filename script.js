@@ -161,19 +161,26 @@
 
 //! Code for Object
  
-let user={
-    name: 'John',
-    age: 36,
-    appear:{height:50,weight:100},
-    extras:["Eye color is black"],
-    speak:function(){
-        console.log("My name is John")
-    }
+// let user={
+//     name: 'John',
+//     age: 36,
+//     appear:{height:50,weight:100},
+//     extras:["Eye color is black"],
+//     speak:function(){
+//         console.log("My name is John")
+//     }
+// }
+// console.log(user.name)
+// console.log(user.age)
+// console.log(user.appear.height)
+// console.log(user.extras)
+// user.speak()
+
+//! code for "For" loop
+let i;
+for(i=0;i<=10;i++){
+    console.log(i);
 }
-console.log(user.name)
-console.log(user.age)
-console.log(user.appear.height)
-console.log(user.extras)
-user.speak()
-
-
+for(i=10;i>=0;i--){
+    console.log(i);
+}
