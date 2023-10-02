@@ -242,3 +242,22 @@ function greet(name="User"){
 }
 console.log(greet())
 console.log( greet("Arun"))
+
+//! code for check a number is positive or negative using function
+
+function checknum(num){
+    if(typeof num==="number"){
+        if(num<0)
+         return "Negative"
+        else if(num===0){
+            return "The Number is 0"
+        }
+        else
+          return "Possitive"
+    }
+    else
+     return "Enter the Number"
+
+}
+
+console.log( checknum(0))
