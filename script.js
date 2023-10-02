@@ -208,13 +208,13 @@
 // }
 
 //! code for reverse a string using for loop
-let str="Arun is topper"
-console.log(`The original string: ${str}`)
-let arr =str.split(' ')
-let arr2=arr.reverse()
-for(let rev of arr2){
-    console.log(rev)
-}
+// let str="Arun is topper"
+// console.log(`The original string: ${str}`)
+// let arr =str.split(' ')
+// let arr2=arr.reverse()
+// for(let rev of arr2){
+//     console.log(rev)
+// }
 
 
 
@@ -235,3 +235,10 @@ for(let rev of arr2){
 // }
 
 
+//!code for functions
+
+function greet(name="User"){
+    return `Welcome ${name}`
+}
+console.log(greet())
+console.log( greet("Arun"))
