@@ -266,7 +266,7 @@
 let arr1=[1,2,3]
 let arr2=[4,5,6]
 let arr3=arr1.concat(arr2)
-function sumarr(arr){
+let sumarr=(arr)=>{
     let sum=0;
     if (typeof arr==="object"){
         for(let arrele of arr){
