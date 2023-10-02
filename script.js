@@ -263,6 +263,25 @@
 // console.log( checknum(0))
 
 //! code for find the sum of array using function
+// let arr1=[1,2,3]
+// let arr2=[4,5,6]
+// let arr3=arr1.concat(arr2)
+// function sumarr(arr){
+//     let sum=0;
+//     if (typeof arr==="object"){
+//         for(let arrele of arr){
+//             sum = sum+arrele;
+//         }
+//         return sum
+//     }
+//     else {
+//         return "Invalid input"
+//     }
+// }
+
+// console.log(sumarr(arr3))
+
+//! code for arrow function
 let arr1=[1,2,3]
 let arr2=[4,5,6]
 let arr3=arr1.concat(arr2)
