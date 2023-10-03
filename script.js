@@ -282,20 +282,36 @@
 // console.log(sumarr(arr3))
 
 //! code for arrow function
-let arr1=[1,2,3]
-let arr2=[4,5,6]
-let arr3=arr1.concat(arr2)
-let sumarr=(arr)=>{
-    let sum=0;
-    if (typeof arr==="object"){
-        for(let arrele of arr){
-            sum = sum+arrele;
-        }
-        return sum
-    }
-    else {
-        return "Invalid input"
-    }
+// let arr1=[1,2,3]
+// let arr2=[4,5,6]
+// let arr3=arr1.concat(arr2)
+// let sumarr=(arr)=>{
+//     let sum=0;
+//     if (typeof arr==="object"){
+//         for(let arrele of arr){
+//             sum = sum+arrele;
+//         }
+//         return sum
+//     }
+//     else {
+//         return "Invalid input"
+//     }
+// }
+
+// console.log(sumarr(arr3))
+console.clear()
+
+//! code for function call
+function hi(){
+    console.log("Hiii")
+    console.log("welcome")
 }
 
-console.log(sumarr(arr3))
+function printfun(funs){
+    funs()
+    console.log("Function is over")
+
+}
+
+printfun(hi)
+
